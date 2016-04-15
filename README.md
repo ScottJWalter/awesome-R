@@ -2,7 +2,9 @@
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-A curated list of awesome R frameworks, packages and software. Inspired by [awesome-machine-learning](https://github.com/josephmisiti/awesome-machine-learning).
+A curated list of awesome R packages, frameworks and software. Inspired by [awesome-machine-learning](https://github.com/josephmisiti/awesome-machine-learning).
+
+And trending R GitHub repos are [HERE](https://github.com/qinwf/awesome-R/blob/master/r-trending.md).
 
 - [Awesome R](#awesome-)
     - [Integrated Development Environments](#integrated-development-environments)
@@ -19,11 +21,13 @@ A curated list of awesome R frameworks, packages and software. Inspired by [awes
     - [Machine Learning](#machine-learning)
     - [Natural Language Processing](#natural-language-processing)
     - [Bayesian](#bayesian)
+    - [Optimization](#optimization)
     - [Finance](#finance)
     - [Bioinformatics](#bioinformatics)
     - [Network Analysis](#network-analysis)
     - [R Development](#r-development)
     - [Logging](#logging)
+    - [Other Tools](#other-tools)
     - [Other Interpreters](#other-interpreters)
     - [Learning R](#learning-r)
 - [Resources](#resources)
@@ -31,6 +35,7 @@ A curated list of awesome R frameworks, packages and software. Inspired by [awes
     - [Books](#books)
     - [Reference Cards](#reference-cards)
     - [MOOCs](#moocs)
+    - [Lists](#lists)
 - [Other Awesome Lists](#other-awesome-lists)
 - [Contributing](#contributing)
 
@@ -49,6 +54,8 @@ A curated list of awesome R frameworks, packages and software. Inspired by [awes
 * [Radiant](http://vnijs.github.io/radiant/) - A platform-independent browser-based interface for business analytics in R, based on the Shiny.
 * [Vim-R](https://github.com/vim-scripts/Vim-R-plugin) - Vim plugin for R. 
 * [JASP](https://jasp-stats.org/) - A complete package for both Bayesian and Frequentist methods, that is familiar to users of SPSS.
+* [Bio7](http://www.bio7.org/) - A IDE contains tools for model creation, scientific image analysis and statistical analysis for ecological modelling.
+* [RTVS](http://microsoft.github.io/RTVS-docs/) - R Tools for Visual Studio.
 
 ## Syntax
 *Packages change the way you use R.*
@@ -74,17 +81,22 @@ A curated list of awesome R frameworks, packages and software. Inspired by [awes
 * [lubridate](http://cran.r-project.org/web/packages/lubridate/index.html) - A set of functions to work with dates and times.
 * [stringi](http://www.rexamine.com/resources/stringi/) - ICU based string processing package.
 * [stringr](https://github.com/hadley/stringr) - Consistent API for string processing, built on top of stringi.
+* [bigmemory](http://cran.r-project.org/web/packages/bigmemory/index.html) - Shared memory and memory-mapped matrices. The big* pacakges provide additional tools including linear models ([biglm](http://cran.r-project.org/web/packages/biglm/index.html)) and Random Forests ([bigrf](https://github.com/aloysius-lim/bigrf)).
 
 ## Graphic Displays
 *Packages for showing data.*
 
 * [ggplot2](https://github.com/hadley/ggplot2) - An implementation of the Grammar of Graphics.
+* [ggfortify](https://github.com/sinhrks/ggfortify) - A unified interface to ggplot2 popular statistical packages using one line of code. 
+* [ggrepel](https://github.com/slowkow/ggrepel) - Repel overlapping text labels away from each other.
+* [ggalt](https://github.com/hrbrmstr/ggalt) - Extra Coordinate Systems, Geoms and Statistical Transformations for ggplot2.
 * [lattice](http://lattice.r-forge.r-project.org/) - A powerful and elegant high-level data visualization system.
 * [rgl](http://cran.r-project.org/web/packages/rgl/index.html) - 3D visualization device system for R.
 * [Cairo](http://cran.r-project.org/web/packages/Cairo/index.html) - R graphics device using cairo graphics library for creating high-quality display output.
 * [extrafont](https://github.com/wch/extrafont) - Tools for using fonts in R graphics.
 * [showtext](https://github.com/yixuan/showtext) - Enable R graphics device to show text using system fonts.
 * [animation](http://yihui.name/animation/) - A simple way to produce animated graphics in R, using [ImageMagick](http://imagemagick.org/).
+* [gganimate](https://github.com/dgrtwo/gganimate) - Create easy animations with ggplot2.
 * [misc3d](https://cran.r-project.org/web/packages/misc3d/index.html) - Powerful functions to deal with 3d plots, isosurfaces, etc.
 * [xkcd](https://cran.r-project.org/web/packages/xkcd/index.html) - Use xkcd style in graphs.
 * [imager](http://dahtah.github.io/imager/) - An image processing package based on CImg library to work with images and display them.
@@ -101,6 +113,7 @@ A curated list of awesome R frameworks, packages and software. Inspired by [awes
 * [Leaflet](http://rstudio.github.io/leaflet/) - One of the most popular JavaScript libraries interactive maps.
 * [MetricsGraphics](http://hrbrmstr.github.io/metricsgraphics/) - Enables easy creation of D3 scatterplots, line charts, and histograms.
 * [networkD3](http://christophergandrud.github.io/networkD3/) - D3 JavaScript Network Graphs from R.
+* [scatterD3](https://github.com/juba/scatterD3) - Interactive scatterplots with D3.
 * [plotly](https://github.com/ropensci/plotly) - Interactive ggplot2 and Shiny plotting with [plot.ly](https://plot.ly).
 * [rCharts](https://github.com/ramnathv/rCharts) - Interactive JS Charts from R.
 * [rbokeh](http://hafen.github.io/rbokeh/) - R Interface to [Bokeh](http://bokeh.pydata.org/en/latest/).
@@ -119,6 +132,7 @@ A curated list of awesome R frameworks, packages and software. Inspired by [awes
 * [checkpoint](http://projects.revolutionanalytics.com/documents/rrt/rrtpkgs/) - Install packages from snapshots on the checkpoint server.
 * [brew](https://cran.r-project.org/web/packages/brew/index.html) - Pre-compute data to enhance your report templates. Can be combined with knitr. 
 * [ReporteRs](http://davidgohel.github.io/ReporteRs/index.html) - An R package to generate Microsoft Word, Microsoft PowerPoint and HTML reports.
+* [bookdown](https://bookdown.org/) - Authoring Books with R Markdown.
 
 ## Web Technologies and Services
 *Packages to surf the web.*
@@ -139,6 +153,8 @@ A curated list of awesome R frameworks, packages and software. Inspired by [awes
 * [Rmpi](http://cran.r-project.org/web/packages/Rmpi/index.html) - Rmpi provides an interface (wrapper) to MPI APIs. It also provides interactive R slave environment.
 * [foreach](http://cran.r-project.org/web/packages/foreach/index.html) - Executing the loop in parallel.
 * [SparkR](https://github.com/amplab-extras/SparkR-pkg) - R frontend for Spark.
+* [DistributedR](https://github.com/vertica/DistributedR) - A scalable high-performance platform from  HP Vertica Analytics Team.
+* [ddR](https://github.com/vertica/ddR) - Provides distributed data structures and simplifies distributed computing in R.
 
 ## High Performance
 *Packages for making R faster.*
@@ -228,7 +244,6 @@ Proportional Hazards Model
 covariates
 * [h2o](http://cran.r-project.org/web/packages/h2o/index.html) - Deeplearning, Random forests, GBM, KMeans, PCA, GLM
 * [hda](http://cran.r-project.org/web/packages/hda/index.html) - Heteroscedastic Discriminant Analysis
-* [Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/)
 * [ipred](http://cran.r-project.org/web/packages/ipred/index.html) - Improved Predictors
 * [kernlab](http://cran.r-project.org/web/packages/kernlab/index.html) - kernlab: Kernel-based Machine Learning Lab
 * [klaR](http://cran.r-project.org/web/packages/klaR/index.html) - Classification and visualization
@@ -241,6 +256,7 @@ covariates
 * [mboost](http://cran.r-project.org/web/packages/mboost/index.html) - Model-Based Boosting
 * [Machine Learning For Hackers](https://github.com/johnmyleswhite/ML_for_Hackers)
 * [mvpart](http://cran.r-project.org/web/packages/mvpart/index.html) - Multivariate partitioning
+* [MXNet](https://github.com/dmlc/mxnet/tree/master/R-package) - MXNet brings flexible and efficient GPU computing and state-of-art deep learning to R.
 * [ncvreg](http://cran.r-project.org/web/packages/ncvreg/index.html) - Regularization paths for SCAD- and MCP-penalized regression
 models
 * [nnet](http://cran.r-project.org/web/packages/nnet/index.html) - eed-forward Neural Networks and Multinomial Log-Linear Models
@@ -288,6 +304,7 @@ Angle Regression
 ## Natural Language Processing
 *Packages for Natural Language Processing.*
 
+* [text2vec](https://github.com/dselivanov/text2vec) - Fast Text Mining Framework for Vectorization and Word Embeddings.
 * [tm](http://cran.r-project.org/web/packages/tm/index.html) - A comprehensive text mining framework for R.
 * [openNLP](http://cran.r-project.org/web/packages/openNLP/index.html) - Apache OpenNLP Tools Interface.
 * [koRpus](http://cran.r-project.org/web/packages/koRpus/index.html) - An R Package for Text Analysis.
@@ -298,6 +315,8 @@ Angle Regression
 * [LDAvis](https://github.com/cpsievert/LDAvis) - Interactive visualization of topic models.
 * [topicmodels](https://cran.r-project.org/web/packages/topicmodels/index.html) - Topic modeling interface to the C code developed by by David M. Blei for Topic Modeling (Latent Dirichlet Allocation (LDA), and Correlated Topics Models (CTM)).
 * [syuzhet](https://cran.r-project.org/web/packages/syuzhet/index.html) - Extracts sentiment from text using three different sentiment dictionaries.
+* [SnowballC](https://cran.rstudio.com/web/packages/SnowballC/index.html) - Snowball stemmers based on the C libstemmer UTF-8 library.
+* [quanteda](https://github.com/kbenoit/quanteda) - R functions for Quantitative Analysis of Textual Data.
 
 ## Bayesian
 *Packages for Bayesian Inference.*
@@ -308,7 +327,14 @@ Angle Regression
 * [R2WinBUGS](http://cran.r-project.org/web/packages/R2WinBUGS/index.html) - Running WinBUGS and OpenBUGS from R / S-PLUS.
 * [BRugs](http://cran.r-project.org/web/packages/BRugs/index.html) - R interface to the OpenBUGS MCMC software.
 * [rjags](http://cran.r-project.org/web/packages/rjags/index.html) - R interface to the JAGS MCMC library.
-* [rstan](http://mc-stan.org/rstan.html) - R interface to the Stan MCMC software.
+* [rstan](http://mc-stan.org/interfaces/rstan.html) - R interface to the Stan MCMC software.
+
+## Optimization
+*Packages for Optimization.*
+
+* [minqa](https://cran.rstudio.com/web/packages/minqa/index.html) - Derivative-free optimization algorithms by quadratic approximation.
+* [nloptr](https://cran.rstudio.com/web/packages/nloptr/index.html) - NLopt is a free/open-source library for nonlinear optimization.
+* [lpSolve](https://cran.rstudio.com/web/packages/lpSolve/index.html) - Interface to `Lp_solve` to Solve Linear/Integer Programs.
 
 ## Finance
 *Packages for dealing with money.*
@@ -343,6 +369,7 @@ Angle Regression
 * [latentnet](https://cran.r-project.org/web/packages/latentnet/index.html) - Latent position and cluster models for network objects.
 * [tnet](https://cran.r-project.org/web/packages/tnet/index.html) - Network measures for weighted, two-mode and longitudinal networks.
 * [rgexf](https://bitbucket.org/gvegayon/rgexf/wiki/Home) - Export network objects from R to [GEXF](http://gexf.net/format/), for manipulation with network software like [Gephi](https://gephi.github.io/) or [Sigma](http://sigmajs.org/).
+* [visNetwork](https://github.com/DataKnowledge/visNetwork) - Using vis.js library for network visualization.
 
 ## R Development
 *Packages for packages.*
@@ -363,9 +390,15 @@ Angle Regression
 
 ## Logging
 *Packages for Logging*
+
 * [futile.logger](https://github.com/zatonovo/futile.logger) - A logging package in R similar to log4j
 * [log4r](https://github.com/johnmyleswhite/log4r) - A log4j derivative for R
 * [logging](https://cran.r-project.org/web/packages/logging/index.html) - A logging package emulating the python logging package.
+
+## Other Tools
+*Handy Tools for R*
+
+* [git2r](https://github.com/ropensci/git2r) - Gives you programmatic access to Git repositories from R.
 
 ## Other Interpreters
 *Alternative R engines.*
@@ -375,8 +408,9 @@ Angle Regression
 * [fastR](https://bitbucket.org/allr/fastr/wiki/Home) - FastR is an implementation of the R Language in Java atop Truffle and Graal.
 * [riposte](https://github.com/jtalbot/riposte) - a fast interpreter and JIT for R.
 * [TERR](http://spotfire.tibco.com/discover-spotfire/what-does-spotfire-do/predictive-analytics/tibco-enterprise-runtime-for-r-terr) - TIBCO Enterprise Runtime for R.
-* [RRE](http://www.revolutionanalytics.com/) - Revolution R Enterprise.
+* [RRO](https://mran.revolutionanalytics.com/open/) - Revolution R Open.
 * [CXXR](https://www.cs.kent.ac.uk/projects/cxxr/) - Refactorising R into C++.
+* [incanter](https://github.com/incanter/incanter) - Clojure-based, R-like statistical computing and graphics environment for the JVM with Lisp spirit.
 
 ## Learning R
 *Packages for Learning R.*
@@ -414,6 +448,8 @@ Where to discover new R-esources.
 * [Use R!](http://www.springer.com/series/6991?detailsPage=titles) - This series of inexpensive and focused books from Springer publish shorter books aimed at practitioners. Books can discuss the use of R in a particular subject area, such as Bayesian networks, ggplot2 and Rcpp.
 * [R for SAS and SPSS users](http://r4stats.com/books/free-version/) - An excelllent resource for users already familiar with SAS or SPSS.
 * [An Introduction to R](https://cran.r-project.org/doc/manuals/R-intro.pdf) - A very good introductory text on R, also covers some advanced topics.
+* [Introduction to Statistical Learning with Application in R](http://www-bcf.usc.edu/~gareth/ISL/) - A simplified and "operational" version of *The Elements of Statistical Learning*. Free softcopy provided by its authors.
+* [The R Inferno](http://www.burns-stat.com/pages/Tutor/R_inferno.pdf) - Patrick Burns gives insight into R's ins and outs along with its quirks!
 
 ## Reference Cards
 
@@ -433,6 +469,17 @@ Where to discover new R-esources.
 * [Johns Hopkins University Data Science Specialization](https://www.coursera.org/specialization/jhudatascience/1) - 9 courses including: Introduction to R, literate analysis tools, Shiny and some more.
 * [HarvardX Biomedical Data Science](http://simplystatistics.org/2014/11/25/harvardx-biomedical-data-science-open-online-training-curriculum-launches-on-january-19/) - Introduction to R for the Life Sciences.
 * [Explore Statistics with R](https://www.edx.org/course/explore-statistics-r-kix-kiexplorx-0) - Covers introduction, data handling and statistical analysis in R.
+
+## Lists
+*Great resources for learning domain knowledge.*
+
+* [Books](https://github.com/RomanTsegelskyi/rbooks) - List of R Books.
+* [ggplot2 Extensions](https://ggplot2-exts.github.io/ggiraph.html) - Showcases of ggplot2 extensions.
+* [Network Analysis](https://github.com/briatte/awesome-network-analysis) - Network Analysis related resources.
+* [Posts](./posts.md) - Great R blog posts or Rticles.
+* [R Project Conferences](https://www.r-project.org/conferences.html) -  Information about useR! Conferences and DSC Conferences.
+* [RStudio Addins](https://github.com/daattali/rstudio-addins) - List of RStudio addins. 
+* [Topic Models](https://github.com/trinker/topicmodels_learning) - Topic Models learning and R related resources.
 
 # Other Awesome Lists
 
